@@ -5,7 +5,7 @@ const Button = ({text, handleOnClick}) => {
   return (
     <div className="buttons">              
       <div className="container">
-          <button onClick={()=>{handleOnClick()}}>
+          <button onClick={()=>{handleOnClick()}} className="btn effect01">
             <span>{text}</span>
           </button>
       </div>

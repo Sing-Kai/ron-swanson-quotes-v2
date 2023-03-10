@@ -3,7 +3,7 @@ import React, {useState, useEffect, useCallback} from "react";
 const Quote = ({quote}) => {
 
   return (
-    <div>
+    <div className='Quote'>
       {quote}
     </div>
   )

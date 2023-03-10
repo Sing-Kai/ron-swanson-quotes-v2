@@ -18,13 +18,19 @@ function App() {
   }
 
   if(loading){
-    return <div>{'loading quotes'}</div>
+    return <div className='App'>{'loading quotes'}</div>
   }
 
   return (
-    <div >
-      <Quote quote={quote}/>
-      <Button text={'New Quote'} handleOnClick={handleOnClick}/>
+    <div className='App'>
+        <div className = 'landing-body'>
+            <h1 className='landing-header'> 
+                <div className='header-primary'>
+                  <Quote quote={quote}/>
+                </div>
+                <Button text={'New Quote'} handleOnClick={handleOnClick}/>
+            </h1>
+        </div>
     </div>
   );
 }
