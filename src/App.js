@@ -9,7 +9,7 @@ function App() {
 
   const [newQuote, setNewQuote] = useState(false);
   const {loading, error, quote} = useFetchQuote(url, newQuote);
-  const handleOnClick = async () =>{
+  const handleOnClick = () =>{
     setNewQuote(current => !current);
   }
 
