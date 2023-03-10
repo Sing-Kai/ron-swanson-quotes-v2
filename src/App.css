@@ -31,44 +31,52 @@ html, body {
   color: #61dafb;
 }
 
-.landing-body{
-  padding: 5px;
-  width: 100%;
-  position: absolute;
-}
-
-.landing-header{
-  height: 100vh;
-  background-image: linear-gradient(
-      to right, 
-      rgba(299, 299, 299, 0.5), 
-      rgba(204, 203, 203, 0.5)), 
-      url(./images/ron.jpg);
+.background-image {
+  opacity: 0.65;
   background-size: cover;
   background-position: top;
   position: relative;
+  z-index: -1;
+  max-width: 100%;
+  height: 100vh;
+  width: 100vw;
+  @media (max-width: 850px) {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
 }
 
-.Quote {
-  display: block;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 10px;
-  text-align: center;
-  font-size: 50px;
-  animation-name: moveInLeft;
-  animation-duration: 3s;
-}
 
-.header-primary{
-  color: white;
-  text-transform: uppercase;
-  position: absolute;
+.quote-container{
+  padding: 5px;
+  width: 100vw;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  color: white;
+  text-transform: uppercase;
 }
+
+.landing-header{
+  padding: 5px;
+  
+}
+
+.Quote {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  width: 100vw;
+}
+
 
 @keyframes moveInLeft{
 
@@ -88,11 +96,12 @@ html, body {
 }
 
 .buttons {
-  position: fix;
+  position: absolute;
   display: inline-block;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .container {
@@ -122,7 +131,7 @@ html, body {
 .btn:hover {
   text-decoration: none;
 }
-/*btn_background*/
+
 .effect01 {
   color: white;
   border: 4px solid #000;
