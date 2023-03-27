@@ -4,7 +4,8 @@ Version 2 of Ron Swanson Quotes app where we are using React hooks and a custom 
 
 `https://ron-swanson-quotes.herokuapp.com/v2/quotes`
 
-## How to run 
+
+## How to install and run 
 
 `npm install`
 
